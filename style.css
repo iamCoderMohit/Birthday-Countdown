@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.969), rgba(0, 0, 0, 0.585)), url("bgbirth.webp");
+    background-repeat: no-repeat;
+    background-size: cover; /* Make the image cover the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(38, 32, 32);
+    display: flex;
+    align-items: center;
+}
+
+nav span{
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.inputArea{
+    height: 100px;
+    width: 500px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;      /* Position the element */
+    top: 50%;                /* Move it down 50% of the viewport height */
+    left: 50%;               /* Move it right 50% of the viewport width */
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    /* display: none; */
+}
+
+.enter{
+    height: 80px;
+    width: 48%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.calendar{
+    height: 80px;
+    width: 48%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.calendar input{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+}
+
+.calcDate{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: rgb(176, 15, 176);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;      /* Position the element */
+    top: 60%;                /* Move it down 50% of the viewport height */
+    left: 50%;               /* Move it right 50% of the viewport width */
+    transform: translate(-50%, -50%);
+}
+
+.afterCal{
+    height: 100px;
+    width: 500px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;      /* Position the element */
+    top: 50%;                /* Move it down 50% of the viewport height */
+    left: 50%;               /* Move it right 50% of the viewport width */
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: none;
+}
+
+.nextIn{
+    height: 80px;
+    width: 48%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.time{
+    height: 70px;
+    width: 48%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size: 15px;  
+    font-weight: bold;
+    text-align: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 620px){
+    .inputArea, .afterCal{
+        flex-direction: column;
+        height: 200px;
+        width: 350px;
+    }
+
+    .calcDate{
+        top: 70%;
+    }
+
+    .enter, .nextIn{
+        width: 70%;
+    }
+}
